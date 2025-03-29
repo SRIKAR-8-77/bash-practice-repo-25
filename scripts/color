@@ -24,7 +24,6 @@ declare -A color_mapping=(
     ['bright_cyan']=96
     ['bright_white']=97
 )
-
 if [[ $1 == 'reset' ]]; then
     color 0 00  # Reset color
 elif [[ -n ${color_mapping[$1]} ]]; then
