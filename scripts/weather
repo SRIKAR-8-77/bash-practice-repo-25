@@ -2,3 +2,6 @@
 
 # TODO: Display weather of IIIT, Lucknow
 # For more information see: https://wttr.in/:help
+loc="IIIT LUCKNOW"
+weather =$(curl -s "wwtr.in/$loc?format=%C+%t+%w")
+echo "$weather"
